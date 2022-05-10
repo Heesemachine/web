@@ -1,10 +1,110 @@
-.search-box
-{
-    position: absolute;
-    top:10%;
-    left:2%;
-    transform: translate(-10%,10%);
-    background: #7575758a;
-    height: 40px;
-    border-radius: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
+
+.contacts{
+    line-height: 26px;}  
+footer{  
+    font-size: large;
+    background-color: #b7ff8e;              
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    position: relative;
+    height: 200px;
+    transition: 2s;
+}
+.photo {
+    position: relative;
+    bottom: 40px;
+}
+.nolinkdesign {
+    color: inherit;
+    text-decoration:none; 
+}
+.Elon {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    font-weight: 700px;
+    letter-spacing: 3px;
+    position:relative ;
+    animation: text 3s 1;
+}
+@keyframes text {
+    0%{
+        color:white;
+        margin-bottom: -40px;        
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    border: solid rgb(147, 147, 147);
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    border: solid rgb(147, 147, 147);
+    border-radius: 15px;
+    font-family: sans-serif;
+
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    background-color: rgb(0, 179, 255);
+    padding: 20px;
+    top: 0px;
+    position: fixed;
+    border-radius: 15px;
+}
+.GAH {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.GAH2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.texzt {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.T1 {
+    color:#000000;
+    position: relative
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.T2 {
+    color:#000000;
+    position: left;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: (1oopx, auto);
+}
+.box3 div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9cafec;
+    border: 1px solid #212941;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: #000000;
+    font-size: 18px;
 }
