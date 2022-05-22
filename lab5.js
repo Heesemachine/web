@@ -32,6 +32,8 @@ class AllLots {
     FindBySmth(date,price) {
         date = date.split(".")
         for(let i = 0; i < this.all_lots.length; i++){
+            console.log(date[2])
+            console.log(this.all_lots[i])
             if(date[2] > this.all_lots[i].start[2] && date[2] < this.all_lots[i].end[2] && price >= this.all_lots[i].fprice){
                 return this.all_lots[i]
             }
