@@ -29,6 +29,31 @@ class Auction {
   
   class AllLots {
       constructor(all_lots = []) {this.all_lots = all_lots;}
+      AddElement(el) {
+          this.all_lots.push(el)
+      }
+      AddColection(colection) {
+          for(let i = 0; i < colection.length;i++) {
+              this.all_lots.push(colection[i])
+          }
+      }
+      EditEl(el,code, name, start, end, fprice, lprice) {
+          this.all_lots.find((x) => x == el).code = code
+          this.all_lots.find((x) => x == el).name = name
+          this.all_lots.find((x) => x == el).start = start
+          this.all_lots.find((x) => x == el).end = end
+          this.all_lots.find((x) => x == el).fprice = fprice
+          this.all_lots.find((x) => x == el).lprice = lprice         
+      }
+      ClearEl(el) {
+        this.all_lots.find((x) => x == el).code = ''
+        this.all_lots.find((x) => x == el).name = ''
+        this.all_lots.find((x) => x == el).start = ''
+        this.all_lots.find((x) => x == el).end = ''
+        this.all_lots.find((x) => x == el).fprice = ''
+        this.all_lots.find((x) => x == el).lprice = ''
+
+      }
       FindBySmth(date,price) {
         
           date = date.split(".")
@@ -51,3 +76,4 @@ class Auction {
   let a = new StringToLots(2, "glasess", "19.05.2022","26.05.2022", 20222, 55555)
   let lots = new AllLots([a,b])
   console.log(lots.FindBySmth("23.05.2022",20000))
+  console.log(lots.ClearEl(a))
