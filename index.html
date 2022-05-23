@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="lab61.js" defer></script>
+    <script src="lab62.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 id="header"></h1>
 
-    <script src="lab5.js"></script>
+  <body>
+    <br>
+    <table id="table" border="1px">
+      <thead>
+        <tr>
+          <th>код</th>
+          <th>Name</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Fprice</th>
+          <th>Lprice</th>
+          <th>дії</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+    <br>
+    <button id="addLots">add</button> <br> <br>
+
+    <div id="constructor"class="hide">
+      <label>add Lot</label> <br>
+      <input type="text" id="code" placeholder="код"><br>
+      <input type="text" id="name" placeholder="name"><br>
+      <input type="text" id="start" placeholder="start"><br>
+      <input type="text" id="end" placeholder="end"><br>
+      <input type="text" id="fprice" placeholder="fprice"><br>
+      <input type="text" id="lprice" placeholder="lprice"><br>
+      <button id="addLotsButton">ok</button> 
+    </div>
+
+    <div id="constructorEdit" class="hide">
+      <label>редагувати новину</label> <br>
+      <input type="text" id="code2" placeholder="код"><br>
+      <input type="text" id="name2" placeholder="name"><br>
+      <input type="text" id="start2" placeholder="start"><br>
+      <input type="text" id="end2" placeholder="end"><br>
+      <input type="text" id="fprice2" placeholder="fprice"><br>
+      <input type="text" id="lprice2" placeholder="lprice"><br>
+      <button id="addLotsButton">ok</button> 
+    </div>
+
   </body>
 </html>
